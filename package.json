@@ -1,0 +1,35 @@
+{
+  "name": "youtube-tests",
+  "version": "1.0.0",
+  "description": "Testes automatizados para YouTube",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:smoke",
+    "test:homepage": "npx cypress run --spec \"cypress/e2e/**/homepage*.cy.js\"",
+    "test:search": "npx cypress run --spec \"cypress/e2e/**/search*.cy.js\"",
+    "test:smoke": "npx cypress run --spec \"cypress/e2e/**/*.cy.js\"",
+    "test:navigation": "npx cypress run --spec \"cypress/e2e/**/navigation*.cy.js\"",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "test:ci": "cypress run",
+    "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "report:html": "marge cypress/reports/report.json -o cypress/reports -f relatorio-cypress",
+    "test:ci:report": "npm run test:ci && npm run report:merge && npm run report:html",
+    "clean": "rm -rf cypress/screenshots cypress/videos cypress/reports"
+  },
+  "keywords": [
+    "cypress",
+    "testing",
+    "youtube",
+    "automation"
+  ],
+  "author": "Thayse Dias",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^15.9.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.0",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
