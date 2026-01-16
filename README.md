@@ -5,6 +5,19 @@
 
 ---
 
+🎯 Objetivo didático (para aula)
+
+| Camada           | O que o aluno aprende        |
+| ---------------- | ---------------------------- |
+| Smoke            | Testes críticos e rápidos    |
+| Funcional        | Fluxos completos de usuário  |
+| API              | Teste sem UI                 |
+| Performance      | Carga, latência e throughput |
+| Page Object      | Manutenção e reutilização    |
+| Component Object | Testes mais robustos         |
+
+---
+
 ## 🧪 Tipos de Testes
 
 ### 🔥 Smoke Tests
@@ -12,6 +25,11 @@
 - Executados a cada push / PR
 - Garantem que a aplicação está funcional
 
+📌 Didática:
+
+**“Se isso falhar, o sistema está fora do ar.”*
+
+### 🧠 Funcional (Fluxos)
 
 ---
 ## 🚀 Tecnologias Utilizadas

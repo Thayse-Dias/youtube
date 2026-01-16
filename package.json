@@ -9,6 +9,7 @@
     "test:search": "npx cypress run --spec \"cypress/e2e/**/search*.cy.js\"",
     "test:smoke": "npx cypress run --spec \"cypress/e2e/**/*.cy.js\"",
     "test:navigation": "npx cypress run --spec \"cypress/e2e/**/navigation*.cy.js\"",
+    "test:player-controls": "npx cypress run --spec \"cypress/e2e/**/player-controls*.cy.js\"",
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
     "test:ci": "cypress run",
